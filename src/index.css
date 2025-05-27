@@ -1,13 +1,85 @@
 body {
+  font-family: "Segoe UI", Roboto, sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: #121212; /* очень тёмно-серый, почти черный */
+  color: #e0e0e0; /* светло-серый для текста */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1, h2, h3 {
+  color: #90caf9; /* светло-голубой, мягкий для заголовков */
+}
+
+input, button {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+input {
+  width: 250px;
+  background: #1e1e1e; /* чуть светлее фон для инпута */
+  color: #e0e0e0;
+  border: 1px solid #333;
+}
+
+input::placeholder {
+  color: #888;
+}
+
+button {
+  background-color: #388e3c; /* зелёный, но не яркий */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2e7d32;
+}
+
+img {
+  border-radius: 8px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #1e1e1e; /* тёмно-серый фон контейнера */
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+/* Для таблиц */
+
+table {
+  border-collapse: separate;
+  width: 100%;
+  min-width: 1000px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #333;
+}
+
+/* Оттенки для Radiant и Dire команд (более тёмные и спокойные) */
+
+.radiant-bg {
+  background-color: #264d26; /* темно-зеленый */
+  color: #b9f6ca;
+}
+
+.dire-bg {
+  background-color: #4d2626; /* темно-красный */
+  color: #ff8a80;
 }
